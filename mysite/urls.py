@@ -18,7 +18,7 @@ from django.conf.urls import url, include
 from index.views import index
 
 urlpatterns = [
-    url(r'^$', include('index.urls', namespace='index')),
+    url(r'^', include('index.urls', namespace='index')),
     url(r'^polls/', include('polls.urls')),
     url(r'^news/', include('news.urls')),
     url(r'^admin/', admin.site.urls),
